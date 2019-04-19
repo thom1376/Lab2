@@ -25,37 +25,37 @@ public class SecondActivity extends AppCompatActivity {
     }
 
     @Override
-    public void onStart(){
+    public void onStart() {
         super.onStart();
         Log.d(LOG_TAG, "onStart");
     }
 
     @Override
-    public void onPause(){
+    public void onPause() {
         super.onPause();
         Log.d(LOG_TAG, "onPause");
     }
 
     @Override
-    public void onRestart(){
+    public void onRestart() {
         super.onRestart();
         Log.d(LOG_TAG, "onRestart");
     }
 
     @Override
-    public void onResume(){
+    public void onResume() {
         super.onResume();
         Log.d(LOG_TAG, "onResume");
     }
 
     @Override
-    public void onStop(){
+    public void onStop() {
         super.onStop();
         Log.d(LOG_TAG, "onStop");
     }
 
     @Override
-    public void onDestroy(){
+    public void onDestroy() {
         super.onDestroy();
         Log.d(LOG_TAG, "onDestroy");
     }
