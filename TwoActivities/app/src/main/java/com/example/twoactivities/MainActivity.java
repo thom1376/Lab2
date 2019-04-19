@@ -67,6 +67,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
+    public void onDestroy(){
+        super.onDestroy();
+        Log.d(LOG_TAG, "onDestroy");
+    }
+
+    @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == TEXT_REQUEST) {
