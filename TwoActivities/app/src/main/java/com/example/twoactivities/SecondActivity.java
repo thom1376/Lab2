@@ -54,6 +54,12 @@ public class SecondActivity extends AppCompatActivity {
         Log.d(LOG_TAG, "onStop");
     }
 
+    @Override
+    public void onDestroy(){
+        super.onDestroy();
+        Log.d(LOG_TAG, "onDestroy");
+    }
+
     public void returnReply(View view) {
         String reply = mReply.getText().toString();
         Intent replyIntent = new Intent();
