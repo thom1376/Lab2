@@ -32,6 +32,8 @@ public class MainActivity extends AppCompatActivity {
         String message = mMessageEditText.getText().toString();
         intent.putExtra(EXTRA_MESSAGE, message);
         startActivityForResult(intent, TEXT_REQUEST);
+        Log.d(LOG_TAG, "--------");
+        Log.d(LOG_TAG, "onCreate");
     }
 
     @Override
