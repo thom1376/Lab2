@@ -48,6 +48,12 @@ public class SecondActivity extends AppCompatActivity {
         Log.d(LOG_TAG, "onResume");
     }
 
+    @Override
+    public void onStop(){
+        super.onStop();
+        Log.d(LOG_TAG, "onStop");
+    }
+
     public void returnReply(View view) {
         String reply = mReply.getText().toString();
         Intent replyIntent = new Intent();
