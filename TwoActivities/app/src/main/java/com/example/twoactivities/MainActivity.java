@@ -49,6 +49,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
+    public void onRestart(){
+        super.onRestart();
+        Log.d(LOG_TAG, "onRestart");
+    }
+
+    @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == TEXT_REQUEST) {
