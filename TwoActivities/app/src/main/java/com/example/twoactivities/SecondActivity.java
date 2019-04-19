@@ -36,6 +36,12 @@ public class SecondActivity extends AppCompatActivity {
         Log.d(LOG_TAG, "onPause");
     }
 
+    @Override
+    public void onRestart(){
+        super.onRestart();
+        Log.d(LOG_TAG, "onRestart");
+    }
+
     public void returnReply(View view) {
         String reply = mReply.getText().toString();
         Intent replyIntent = new Intent();
