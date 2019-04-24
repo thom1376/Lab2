@@ -3,16 +3,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingStart="@dimen/layout_padding_left"
-    android:paddingLeft="@dimen/layout_padding_left"
-    android:paddingTop="@dimen/layout_padding_top"
-    android:paddingEnd="@dimen/layout_padding_right"
-    android:paddingRight="@dimen/layout_padding_right"
-    android:paddingBottom="@dimen/layout_padding_bottom"
     tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/androidparty" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/happy_birthday" />
+        android:layout_margin="@dimen/text_margin"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/happy_birthday"
+        android:textColor="@android:color/white"
+        android:textSize="36sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_margin"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/from_text"
+        android:textColor="@android:color/white"
+        android:textSize="36sp" />
 </RelativeLayout>
